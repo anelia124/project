@@ -1,0 +1,19 @@
+{% extends 'main/222.html' %}
+
+{% block title %}Добавить новую новость{% endblock %}
+
+{% block content %}
+   <div class="features">
+      <h1>Новая новость</h1>
+      <form method="post">
+          {{ form.title}}
+          <input type="text" placeholder="Headline" class="form-control"><br>
+          <input type="text" placeholder="Anons" class="form-control"><br>
+          <textarea class="form-control" placeholder="text"></textarea><br>
+          <input type="date" class="form-control"><br>
+          <input type="time" class="form-control"><br>
+          <button class="btn btn-success" type="sumbit">Add new</button>
+      </form>
+    </div>
+{% endblock %}
+
